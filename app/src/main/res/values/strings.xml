@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Covoiturage</string>
+    <string name="tFromInscription">"Formulaire d'inscription"</string>
+    <string name="nom">"Nom : "</string>
+    <string name="prenom">"Prénom : "</string>
+
+</resources>

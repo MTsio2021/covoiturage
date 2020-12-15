@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#80D8FF"
+    android:id="@+id/inscription"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscription réussi !"
+        android:textSize="23dp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/dataProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="23dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/villeProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="23dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/mdpProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="23dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/idAccueil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="bAccueil"
+        android:text="Retour à l'accueil"
+        android:layout_marginTop="150dp"/>
+
+</LinearLayout>

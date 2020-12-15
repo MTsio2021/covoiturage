@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#80D8FF"
+    android:id="@+id/profildirecteur">
+
+    <TextView
+        android:id="@+id/mesAccueilDir"
+        android:layout_width="387dp"
+        android:layout_height="226dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="23dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idConsulteProf"
+        android:onClick="bConsulter"
+        android:text="Consulter la listes des enseignants"
+        android:layout_marginTop="100dp"/>
+
+</LinearLayout>
