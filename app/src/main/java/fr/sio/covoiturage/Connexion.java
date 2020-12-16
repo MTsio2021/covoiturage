@@ -34,6 +34,8 @@ public class Connexion extends AppCompatActivity {
         refusCo = (TextView) findViewById(R.id.refusConnexion);
 
 
+        refusCo.setText(mod.getListeUtilisateurs().toString());
+
 
     }
 

@@ -53,7 +53,8 @@ public class Inscription extends AppCompatActivity{
         String message = new String ("Inscription réussie "+ " "+ pseudo);
 
         Utilisateur prof1 = new Utilisateur(nom,prenom,mail,tel,mdp,ville,pseudo,false);
-        mod.ajouterUnProf(prof1);
+
+        mod.ajouterUnProf(nom,prenom,mail,tel,mdp,ville,pseudo);
 
         Intent i = new Intent(this, InscriValid.class);
         i.putExtra("profinscri", mod.passageGson(prof1));

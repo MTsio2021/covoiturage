@@ -8,11 +8,12 @@ import java.util.ArrayList;
 public class Modele {
 
 
-    protected ArrayList<Utilisateur> listeUtilisateurs = new java.util.ArrayList<>();
+    static ArrayList<Utilisateur> listeUtilisateurs = new java.util.ArrayList<>();
 
     public ArrayList<Utilisateur> getListeUtilisateurs() {
         return listeUtilisateurs;
     }
+
 
     public Modele(){
 
@@ -28,8 +29,8 @@ public class Modele {
         }
         return null;
     }
-    public void ajouterUnProf(Utilisateur unUtilisateur){
-        listeUtilisateurs.add(unUtilisateur);
+    public void ajouterUnProf(String nom, String prenom, String ville, String mail, String tel, String mdp,String pseudo){
+        listeUtilisateurs.add(new Utilisateur(nom,prenom,mail,tel,mdp,ville,pseudo,false));
     }
     public String passageGson(Utilisateur unUtilisateur){
         Gson gson = new GsonBuilder().create();
@@ -62,8 +63,9 @@ public class Modele {
         }
     }
 
+    @Override
     public String toString(){
-        String unUtili = "";
+        String unUtili ="";
         for(Utilisateur unUtil : listeUtilisateurs){
             unUtili = unUtil.afficherProf();
         }
